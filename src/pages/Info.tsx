@@ -18,7 +18,9 @@ import {
     // @ts-ignore
 } from "react-router-dom";
 
-import bg from "../assets/images/bg6.jpg";
+import bg from "../assets/images/bg104.jpg";
+// @ts-ignore
+import GlitchText from 'react-glitch-effect/core/GlitchText';
 
 const Info = () => {
     return (
@@ -27,6 +29,8 @@ const Info = () => {
             <Box
                 backgroundImage={bg}
                 backgroundAttachment={'fixed'}
+                backgroundPosition={'center'}
+                backgroundSize={'cover'}
 
 
             >
@@ -37,15 +41,17 @@ const Info = () => {
 
                         spacing={{base: 8, md: 14}}
                         py={{base: 20, md: 36}}>
-                        <Heading
-                            textAlign={'center'}
-                            fontWeight={600}
-                            fontSize={{base: '5xl', sm: '5xl', md: '6xl'}}
-                            lineHeight={'110%'}>
-                            <Text as={'span'} color={'squid.100'}>
-                                INFO
-                            </Text>
-                        </Heading>
+                        <GlitchText color1={'#fff'} color2={'#1A202C'}>
+                            <Heading
+                                textAlign={'center'}
+                                fontWeight={600}
+                                fontSize={{base: '5xl', sm: '5xl', md: '6xl'}}
+                                lineHeight={'110%'}>
+                                <Text as={'span'} color={'squid.100'}>
+                                    INFO
+                                </Text>
+                            </Heading>
+                        </GlitchText>
                         <Text color={'gray.300'} fontSize={'xl'}>
                             Within the scope of the project, a total of 2180 NFTs were designed. It will be available to collectors on 11/11/2021. The NFTs in this project will be referred to as Gen 1.
                             <br/>
@@ -66,14 +72,14 @@ const Info = () => {
                             Approximately 50% of the project revenue is allocated to software, bonus and advertising expenses, making it a unique NFT project in this respect.
                         </Text>
                         <Center>
-                            <RDLink to={'/roadmap'} exact>
+                            <RDLink to={'/roadmap'}>
                                 <Button variant={'link'} colorScheme={'blue'} size={'4xl'}>
                                     Check Our Road Map
                                 </Button>
                             </RDLink>
                         </Center>
                         <Center>
-                            <RDLink to={'/faq'} exact>
+                            <RDLink to={'/faq'}>
                                 <Button variant={'link'} colorScheme={'blue'} size={'4xl'}>
                                     Check Frequently Asked Questions
                                 </Button>
@@ -84,10 +90,10 @@ const Info = () => {
                             <Center mt={20} fontSize={'4xl'} textAlign={'center'}>ABOUT US</Center>
                             <Divider/>
                             <Text mt={30} color={'gray.300'} fontSize={'xl'}>
-                                Our company met with Blockchain technology in 2015. Due to the necessity in the crypto industry, our company took a sharp decision and started working on cryptocurrency exchange and coin software. At the same time, our own crypto money exchange and software works continue at full speed. In addition, we continue to work on the Arbitrage Robot and Trade Robot between the exchanges. We are planning to create our own Blockchain in 2022. We aim to establish a fast and low-weight network. Our company, which also shows up in the field of advertising and graphics, continues its activities at full speed in all Blockchain and NFT technologies.
+                                Our company met with Blockchain technology in 2015. Due to the necessity in the crypto industry, our company took a sharp decision and started working on cryptocurrency exchange and coin software. At the same time, our own crypto money exchange and software works continue at full speed. In addition, we continue to work on the Arbitrage Robot and Trade Robot between the exchanges. We are planning to create our own Blockchain in 2022. We aim at to establish a fast and low-weight network. Our company, which also shows up in the field of advertising and graphics, continues its activities at full speed in all Blockchain and NFT technologies.
                                 <br/>
                                 <br/>
-                                In order not to break the equality due to the sensitivity of the project, we decided to mention our company name and project names in the future. We are in all Blockchain technologies. Be with us and continue to win by enjoying this adventure.
+                                In order not to break the equality due to the sensitivity of the project, we decided to mention our company name and project names in the future. We are in all Blockchain technologies. Be with us and continue to win by enjoying this
                             </Text>
                         </Box>
                     </Stack>

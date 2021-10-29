@@ -12,11 +12,12 @@ import {
     Link as RDLink,
     // @ts-ignore
 } from "react-router-dom";
-import bg from '../assets/images/bg6.jpg'
+import bg from '../assets/images/bg104.jpg'
 
 import * as React from "react";
 import "@fontsource/caveat";
-
+// @ts-ignore
+import GlitchText from 'react-glitch-effect/core/GlitchText';
 
 const Arrow = createIcon({
     displayName: 'Arrow',
@@ -44,6 +45,8 @@ export default function Home() {
             <Box
                 backgroundImage={bg}
                 backgroundAttachment={'fixed'}
+                backgroundPosition={'center'}
+                backgroundSize={'cover'}
                 h="100vh"
             >
 
@@ -53,15 +56,17 @@ export default function Home() {
                         textAlign={'center'}
                         spacing={{base: 8, md: 14}}
                         py={{base: 20, md: 36}}>
+
                         <Heading
                             fontWeight={600}
                             fontSize={{base: '5xl', sm: '5xl', md: '6xl'}}
                             lineHeight={'110%'}>
-                            SQUID GAME NFT <br/>
+                            <GlitchText color1={'#fe3477'} color2={'#1A202C'}> SQUID GAME NFT </GlitchText>
                             <Text as={'span'} color={'squid.100'}>
                                 GAME #1
                             </Text>
                         </Heading>
+
                         <Text color={'gray.300'}>
                             Are you ready for a different and radical NFT experience on the ETH network? You can get more details from our website or social networks.
                         </Text>
@@ -71,7 +76,7 @@ export default function Home() {
                             align={'center'}
                             alignSelf={'center'}
                             position={'relative'}>
-                            <RDLink to={'/mint'} exact>
+                            <RDLink to={'/mint'}>
                                 <Button
                                     colorScheme={'pink'}
                                     bg={'squid.100'}
@@ -84,7 +89,7 @@ export default function Home() {
                                 </Button>
                             </RDLink>
 
-                            <RDLink to={'/info'} exact>
+                            <RDLink to={'/info'}>
                                 <Button variant={'link'} colorScheme={'blue'} size={'sm'}>
                                     Learn more
                                 </Button>

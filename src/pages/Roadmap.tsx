@@ -20,7 +20,9 @@ import {
     Button
 } from "@chakra-ui/react";
 import {TimelineItem} from "../components/StoryTimeLine";
-import bg from "../assets/images/bg6.jpg";
+import bg from "../assets/images/bg104.jpg";
+// @ts-ignore
+import GlitchText from 'react-glitch-effect/core/GlitchText';
 
 const Roadmap = () => {
     return (
@@ -29,6 +31,8 @@ const Roadmap = () => {
             <Box
                 backgroundImage={bg}
                 backgroundAttachment={'fixed'}
+                backgroundPosition={'center'}
+                backgroundSize={'cover'}
 
 
             >
@@ -38,26 +42,31 @@ const Roadmap = () => {
                         as={Box}
                         spacing={{base: 8, md: 14}}
                         py={{base: 20, md: 36}}>
-                        <Heading
-                            textAlign={'center'}
-                            fontWeight={600}
-                            fontSize={{base: '5xl', sm: '5xl', md: '6xl'}}
-                            lineHeight={'110%'}>
-                            <Text as={'span'} color={'squid.100'}>
-                                ROADMAP
-                            </Text>
-                        </Heading>
+                        <GlitchText color1={'#fff'} color2={'#1A202C'}>
+                            <Heading
+                                textAlign={'center'}
+                                fontWeight={600}
+                                fontSize={{base: '5xl', sm: '5xl', md: '6xl'}}
+                                lineHeight={'110%'}>
+                                <Text as={'span'} color={'squid.100'}>
+                                    ROADMAP
+                                </Text>
+                            </Heading>
+                        </GlitchText>
                         <Text color={'gray.300'} textAlign={'center'}>
-                            This roadmap outlines our goals and where we want to take SQUID GAME NFT. We have a lot of ideas and concepts that we are working on. It may evolve over time and hopefully become even better!
+                            This roadmap outlines is summarize our goals and where we want to take SQUID GAME NFT
+                            <p>
+                                We have a lot of ideas and concepts that we are working on. It may evolve over time and hopefully become even better!
+                            </p>
                         </Text>
                         <Box>
                             <Center mt={20} fontSize={'4xl'}>MAY 2021</Center>
                             <Divider/>
                             <TimelineItem mt={10} icon={FiCheck}>
-                                NFT technologies were examined and it was decided that our company would take part in <p>this sector as well.</p>
+                                NFT technologies were examined and it was decided that our company would take part in this sector as well.
                             </TimelineItem>
                             <TimelineItem icon={FiCheck} skipTrail>
-                                In this regard, NFT infrastructure works have been started.
+                                In this scope, NFT infrastructure works have been started.
                             </TimelineItem>
                             <Center mt={10} fontSize={'4xl'}>OCT 2021</Center>
                             <Divider/>

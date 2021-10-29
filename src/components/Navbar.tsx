@@ -54,7 +54,7 @@ export default function Navbar() {
                         icon={isOpen ? <CloseIcon/> : <HamburgerIcon/>}
                         aria-label={'Open Menu'}
                         display={{md: 'none'}}
-                        colorScheme={"gray"}
+                        colorScheme={"blackAlpha"}
                         onClick={isOpen ? onClose : onOpen}
                     />
                     <HStack spacing={8} alignItems={'center'}>

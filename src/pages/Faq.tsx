@@ -23,7 +23,9 @@ import {
     // @ts-ignore
 } from "react-router-dom";
 
-import bg from "../assets/images/bg6.jpg";
+import bg from "../assets/images/bg104.jpg";
+// @ts-ignore
+import GlitchText from 'react-glitch-effect/core/GlitchText';
 
 const Info = () => {
     return (
@@ -32,6 +34,8 @@ const Info = () => {
             <Box
                 backgroundImage={bg}
                 backgroundAttachment={'fixed'}
+                backgroundPosition={'center'}
+                backgroundSize={'cover'}
 
 
             >
@@ -41,15 +45,17 @@ const Info = () => {
                         as={Box}
                         spacing={{base: 8, md: 14}}
                         py={{base: 20, md: 36}}>
-                        <Heading
-                            textAlign={'center'}
-                            fontWeight={600}
-                            fontSize={{base: '5xl', sm: '5xl', md: '6xl'}}
-                            lineHeight={'110%'}>
-                            <Text as={'span'} color={'squid.100'}>
-                                F.A.Q.
-                            </Text>
-                        </Heading>
+                        <GlitchText color1={'#fff'} color2={'#1A202C'}>
+                            <Heading
+                                textAlign={'center'}
+                                fontWeight={600}
+                                fontSize={{base: '5xl', sm: '5xl', md: '6xl'}}
+                                lineHeight={'110%'}>
+                                <Text as={'span'} color={'squid.100'}>
+                                    F.A.Q.
+                                </Text>
+                            </Heading>
+                        </GlitchText>
                         <Text color={'gray.300'} fontSize={'xl'}>
                             Some frequently asked questions we have compiled for you
                         </Text>

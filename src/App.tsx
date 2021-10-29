@@ -17,11 +17,11 @@ import Mint from "./pages/Mint";
 import Game from "./pages/Game";
 import * as React from "react";
 import Layout from "./components/Layout";
-import useGaTracker from './useGaTracker'
+
 import "@fontsource/orbitron";
 
 function App() {
-    useGaTracker();
+
     return (
         <ChakraProvider theme={theme}>
             <Router>
