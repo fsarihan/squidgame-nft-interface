@@ -42,17 +42,17 @@ const Roadmap = () => {
                         as={Box}
                         spacing={{base: 8, md: 14}}
                         py={{base: 20, md: 36}}>
-                        <GlitchText color1={'#fff'} color2={'#1A202C'}>
-                            <Heading
-                                textAlign={'center'}
-                                fontWeight={600}
-                                fontSize={{base: '5xl', sm: '5xl', md: '6xl'}}
-                                lineHeight={'110%'}>
-                                <Text as={'span'} color={'squid.100'}>
-                                    ROADMAP
-                                </Text>
-                            </Heading>
-                        </GlitchText>
+
+                        <Heading
+                            textAlign={'center'}
+                            fontWeight={600}
+                            fontSize={{base: '5xl', sm: '5xl', md: '6xl'}}
+                            lineHeight={'110%'}>
+                            <Text as={'span'} color={'squid.100'}>
+                                ROADMAP
+                            </Text>
+                        </Heading>
+
                         <Text color={'gray.300'} textAlign={'center'}>
                             This roadmap outlines is summarize our goals and where we want to take SQUID GAME NFT
                             <p>

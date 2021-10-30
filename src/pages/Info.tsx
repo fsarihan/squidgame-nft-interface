@@ -41,17 +41,17 @@ const Info = () => {
 
                         spacing={{base: 8, md: 14}}
                         py={{base: 20, md: 36}}>
-                        <GlitchText color1={'#fff'} color2={'#1A202C'}>
-                            <Heading
-                                textAlign={'center'}
-                                fontWeight={600}
-                                fontSize={{base: '5xl', sm: '5xl', md: '6xl'}}
-                                lineHeight={'110%'}>
-                                <Text as={'span'} color={'squid.100'}>
-                                    INFO
-                                </Text>
-                            </Heading>
-                        </GlitchText>
+
+                        <Heading
+                            textAlign={'center'}
+                            fontWeight={600}
+                            fontSize={{base: '5xl', sm: '5xl', md: '6xl'}}
+                            lineHeight={'110%'}>
+                            <Text as={'span'} color={'squid.100'}>
+                                INFO
+                            </Text>
+                        </Heading>
+
                         <Text color={'gray.300'} fontSize={'xl'}>
                             Within the scope of the project, a total of 2180 NFTs were designed. It will be available to collectors on 11/11/2021. The NFTs in this project will be referred to as Gen 1.
                             <br/>
