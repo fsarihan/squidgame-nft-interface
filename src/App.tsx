@@ -18,10 +18,11 @@ import Game from "./pages/Game";
 import * as React from "react";
 import Layout from "./components/Layout";
 
+
 import "@fontsource/orbitron";
 
-function App() {
 
+function App() {
     return (
         <ChakraProvider theme={theme}>
             <Router>

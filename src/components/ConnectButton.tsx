@@ -2,6 +2,9 @@ import {Button, Box, Text} from "@chakra-ui/react";
 import {useEthers, useEtherBalance} from "@usedapp/core";
 import {formatEther} from "@ethersproject/units";
 import Identicon from "./Identicon";
+import {useCookies} from 'react-cookie';
+// @ts-ignore
+import * as qs from 'qs';
 
 type Props = {
     handleOpenModal: any;
@@ -10,13 +13,18 @@ type Props = {
 export default function ConnectButton({handleOpenModal}: Props) {
     const {activateBrowserWallet, account} = useEthers();
     const etherBalance = useEtherBalance(account);
+    const [cookies, setCookie] = useCookies(['ref']);
+    console.log(cookies.ref);
+    if (typeof cookies.ref == "undefined" && typeof qs.parse(window.location.search, {ignoreQueryPrefix: true})._a != "undefined" && qs.parse(window.location.search, {ignoreQueryPrefix: true})._a.length > 1) {
+        setCookie("ref", qs.parse(window.location.search, {ignoreQueryPrefix: true})._a, {maxAge: 2592000});
+    }
 
     function handleConnectWallet() {
         activateBrowserWallet(err => {
             console.log(err);
             // @ts-ignore
-            if (typeof window['ethereum'] == "undefined") {
-                window.location.href = 'https://metamask.app.link/dapp/squidgame1nft.com?ref=1';
+            if (typeof window['ethereum'] == "undefined" && cookies.ref != null) {
+                window.location.href = 'https://metamask.app.link/dapp/squidgame1nft.com/?_a=' + cookies.ref;
             }
 
         });
