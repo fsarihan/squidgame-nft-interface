@@ -23,8 +23,13 @@ export default function ConnectButton({handleOpenModal}: Props) {
         activateBrowserWallet(err => {
             console.log(err);
             // @ts-ignore
-            if (typeof window['ethereum'] == "undefined" && cookies.ref != null) {
-                window.location.href = 'https://metamask.app.link/dapp/squidgame1nft.com/?_a=' + cookies.ref;
+            if (typeof window['ethereum'] == "undefined") {
+                if (cookies.ref != null) {
+                    window.location.href = 'https://metamask.app.link/dapp/squidgame1nft.com/?_a=' + cookies.ref;
+                } else {
+                    window.location.href = 'https://metamask.app.link/dapp/squidgame1nft.com/';
+                }
+
             }
 
         });
