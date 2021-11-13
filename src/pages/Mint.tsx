@@ -44,8 +44,12 @@ export default function Mint() {
                             </Text>
                         </Heading>
 
+                        <Text color={'gray.200'} fontSize={{base: '4xl', sm: '4xl', md: '5xl'}}>
+                            <Center>WILL START ON</Center>
+                            <Center>21 NOVEMBER 2021</Center>
+
+                        </Text>
                         <Text color={'gray.200'} fontSize={{base: '4xl', sm: '4xl', md: '6xl'}}>
-                            <Center>COMING SOON</Center>
                             <Countdown date={1637452800000}>
                                 <Completed/>
                             </Countdown>

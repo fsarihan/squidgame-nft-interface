@@ -68,7 +68,7 @@ export default function Home() {
                         </Heading>
 
                         <Text color={'gray.300'}>
-                            Are you ready for a different and radical NFT experience on the ETH network? You can get more details from our website or social networks.
+                            Are you ready for a different and radical NFT experience on the POLYGON MATIC network! You can get more details from our website or social networks.
                         </Text>
                         <Stack
                             direction={'column'}
@@ -111,7 +111,7 @@ export default function Home() {
                                     right={'-125px'}
                                     top={'-15px'}
                                     transform={'rotate(10deg)'}>
-                                    0.1 ETH per NFT
+                                    <b>177</b> Matic per NFT
                                 </Text>
                             </Box>
                         </Stack>

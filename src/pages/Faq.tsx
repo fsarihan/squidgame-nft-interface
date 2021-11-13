@@ -45,7 +45,7 @@ const Info = () => {
                         as={Box}
                         spacing={{base: 8, md: 14}}
                         py={{base: 20, md: 36}}>
-                       
+
                         <Heading
                             textAlign={'center'}
                             fontWeight={600}
@@ -207,7 +207,7 @@ const Info = () => {
                                     </AccordionButton>
                                 </h2>
                                 <AccordionPanel pb={4} fontSize={'lg'} color={'gray.300'}>
-                                    0.1 ETH PER NFT
+                                    177 MATIC PER NFT
                                 </AccordionPanel>
                             </AccordionItem>
                             <AccordionItem>
@@ -220,7 +220,7 @@ const Info = () => {
                                     </AccordionButton>
                                 </h2>
                                 <AccordionPanel pb={4} fontSize={'lg'} color={'gray.300'}>
-                                    on Ethereum network.
+                                    on Polygon network.
                                 </AccordionPanel>
                             </AccordionItem>
                             <AccordionItem>
@@ -233,7 +233,7 @@ const Info = () => {
                                     </AccordionButton>
                                 </h2>
                                 <AccordionPanel pb={4} fontSize={'lg'} color={'gray.300'}>
-                                    First of all, you need to have an Eth wallet. You can use various apps like Binance and Coinbase and create a wallet for yourself. You must have ethereum in your wallet as Squid Game will use the 1 NFT ETH blockchain. Download the MetaMask extension to your computer: https://blog.wetrust.io/how-to-install-and-use-metamask-7210720ca047 and then connect your wallet. On the day of the sale, you can visit our website and click the 'Mint' button and choose how many you want to buy, and complete the purchase via MetaMask. You can always reach us via Discord for your questions!
+                                    First of all, you need to have an Eth wallet. You can use various apps like Binance and Coinbase and create a wallet for yourself. You must have Matic in your wallet as Squid Game will use the 1 NFT POLYGON blockchain. Download the MetaMask extension to your computer: https://blog.wetrust.io/how-to-install-and-use-metamask-7210720ca047 and then connect your wallet. On the day of the sale, you can visit our website and click the 'Mint' button and choose how many you want to buy, and complete the purchase via MetaMask. You can always reach us via Discord for your questions!
                                 </AccordionPanel>
                             </AccordionItem>
                             <AccordionItem>
@@ -311,7 +311,7 @@ const Info = () => {
                                     </AccordionButton>
                                 </h2>
                                 <AccordionPanel pb={4} fontSize={'lg'} color={'gray.300'}>
-                                    If the NFT volunteers you share with enter our site from your sharing link and receive Gen 1 NFT, the commission amount will be automatically reflected in your ETH wallet as per the smart contract. All you have to do is share as many links as you can and reach more people. In this project, we are all one, we are all partners.
+                                    If the NFT volunteers you share with enter our site from your sharing link and receive Gen 1 NFT, the commission amount will be automatically reflected in your MATIC wallet as per the smart contract. All you have to do is share as many links as you can and reach more people. In this project, we are all one, we are all partners.
                                 </AccordionPanel>
                             </AccordionItem>
                             <AccordionItem>

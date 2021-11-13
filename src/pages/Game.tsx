@@ -15,7 +15,7 @@ import * as React from "react";
 import GlitchText from 'react-glitch-effect/core/GlitchText';
 
 export default function Game() {
-    const Completed = () => <span>You are good to go!</span>;
+
 
     return (
         <section id={"home"}>
@@ -46,10 +46,8 @@ export default function Game() {
 
                         <Text color={'gray.200'} fontSize={{base: '4xl', sm: '4xl', md: '6xl'}}>
                             <Center>COMING SOON</Center>
-                            <Countdown date={1637452800000}>
-                                <Completed/>
-                            </Countdown>
                         </Text>
+
                     </Stack>
                 </Container>
             </Box>
