@@ -14,7 +14,17 @@ export default function Layout({children}: Props) {
     return (
         <>
             <Navbar/>
-            <ToastContainer/>
+            <ToastContainer
+                position="top-right"
+                autoClose={5000}
+                hideProgressBar
+                newestOnTop
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+            />
             {children}
             <Footer/>
         </>

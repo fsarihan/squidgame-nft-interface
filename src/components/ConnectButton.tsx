@@ -44,7 +44,7 @@ export default function ConnectButton({handleOpenModal}: Props) {
             } else {
                 if (err) {
 
-                    toast.error('🦄 Only work on Polygon chain! You must switch the network to Polygon.', {
+                    toast.dark('🦄 Only work on Polygon chain! You must switch the network to Polygon.', {
                         position: "top-center",
                         autoClose: 5000,
                         hideProgressBar: false,

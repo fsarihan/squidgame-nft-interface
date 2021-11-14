@@ -4,11 +4,9 @@ import App from "./App";
 import {ChainId, DAppProvider} from "@usedapp/core";
 import GA4React from "ga-4-react";
 
+
 const config = {
-    readOnlyChainId: ChainId.Polygon,
-    readOnlyUrls: {
-        [ChainId.Polygon]: 'https://rpc-mainnet.maticvigil.com/'
-    },
+    // supportedChains: [ChainId.Mumbai]
     supportedChains: [ChainId.Polygon]
 }
 

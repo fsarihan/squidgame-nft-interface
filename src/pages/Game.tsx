@@ -7,7 +7,7 @@ import {
     Center
 } from '@chakra-ui/react';
 import Countdown from 'react-countdown';
-import bg from '../assets/images/game1.jpg'
+import bg from '../assets/images/b13.jpg'
 
 import * as React from "react";
 
