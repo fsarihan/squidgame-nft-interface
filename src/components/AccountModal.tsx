@@ -117,7 +117,7 @@ export default function AccountModal({isOpen, onClose}: Props) {
                                 fontSize="sm"
                                 display="flex"
                                 alignItems="center"
-                                href={`https://ropsten.etherscan.io/address/${account}`}
+                                href={`https://polygonscan.com/address/${account}`}
                                 isExternal
                                 color="gray.400"
                                 _hover={{

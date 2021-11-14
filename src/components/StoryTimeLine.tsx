@@ -22,14 +22,14 @@ export const TimelineItem: React.FC<TimelineItemProps> =
          children,
          ...props
      }) => {
-        const color = "gray.400";
+        const color = "gray.100";
         return (
             <Flex minH={20} {...props}>
                 <Flex flexDir="column" alignItems="center" mr={4}
                       pos="relative">
                     <Circle
                         size={12}
-                        bg={"gray.500"}
+                        bg={"gray.200"}
                         opacity={0.15}
                         sx={{}}
                     />

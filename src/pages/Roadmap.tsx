@@ -20,14 +20,16 @@ import {
     Button
 } from "@chakra-ui/react";
 import {TimelineItem} from "../components/StoryTimeLine";
-import bg from "../assets/images/bg104.jpg";
+import bg from "../assets/images/a11.jpg";
 // @ts-ignore
 import GlitchText from 'react-glitch-effect/core/GlitchText';
+
 
 const Roadmap = () => {
     return (
 
         <section id={'roadmap'}>
+
             <Box
                 backgroundImage={bg}
                 backgroundAttachment={'fixed'}
@@ -38,6 +40,7 @@ const Roadmap = () => {
             >
 
                 <Container maxW={'4xl'} fontSize={'lg'}>
+
                     <Stack
                         as={Box}
                         spacing={{base: 8, md: 14}}
@@ -53,7 +56,7 @@ const Roadmap = () => {
                             </Text>
                         </Heading>
 
-                        <Text color={'gray.300'} textAlign={'center'}>
+                        <Text color={'white'} textAlign={'center'}>
                             This roadmap outlines is summarize our goals and where we want to take SQUID GAME NFT
                             <p>
                                 We have a lot of ideas and concepts that we are working on. It may evolve over time and hopefully become even better!

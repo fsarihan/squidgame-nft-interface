@@ -12,12 +12,13 @@ import {
     Link as RDLink,
     // @ts-ignore
 } from "react-router-dom";
-import bg from '../assets/images/bg104.jpg'
+import bg from '../assets/images/a11.jpg'
 
 import * as React from "react";
 import "@fontsource/caveat";
 // @ts-ignore
 import GlitchText from 'react-glitch-effect/core/GlitchText';
+import SideAnimation from "../components/SideAnimation";
 
 const Arrow = createIcon({
     displayName: 'Arrow',
@@ -67,7 +68,7 @@ export default function Home() {
                             </Text>
                         </Heading>
 
-                        <Text color={'gray.300'}>
+                        <Text color={'gray.100'} fontSize={'xl'}>
                             Are you ready for a different and radical NFT experience on the POLYGON MATIC network! You can get more details from our website or social networks.
                         </Text>
                         <Stack
@@ -78,19 +79,22 @@ export default function Home() {
                             position={'relative'}>
                             <RDLink to={'/mint'}>
                                 <Button
-                                    colorScheme={'pink'}
+                                    colorScheme={'red'}
+                                    size={'lg'}
                                     bg={'squid.100'}
                                     rounded={'full'}
                                     px={6}
                                     _hover={{
                                         bg: 'squid.200',
                                     }}>
-                                    MINT
+                                    MINT NFT
                                 </Button>
                             </RDLink>
 
                             <RDLink to={'/info'}>
-                                <Button variant={'link'} colorScheme={'blue'} size={'sm'}>
+                                <Button variant={'link'} mt={25} color={'gray.100'}
+                                        size={'6xl'}
+                                        fontSize={'2xl'}>
                                     Learn more
                                 </Button>
                             </RDLink>
@@ -114,7 +118,9 @@ export default function Home() {
                                     <b>177</b> Matic per NFT
                                 </Text>
                             </Box>
+                            <SideAnimation/>
                         </Stack>
+
                     </Stack>
                 </Container>
             </Box>

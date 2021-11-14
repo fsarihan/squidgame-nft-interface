@@ -1,12 +1,20 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
-import {DAppProvider} from "@usedapp/core";
+import {ChainId, DAppProvider} from "@usedapp/core";
 import GA4React from "ga-4-react";
+
+const config = {
+    readOnlyChainId: ChainId.Polygon,
+    readOnlyUrls: {
+        [ChainId.Polygon]: 'https://rpc-mainnet.maticvigil.com/'
+    },
+    supportedChains: [ChainId.Polygon]
+}
 
 ReactDOM.render(
     <React.StrictMode>
-        <DAppProvider config={{}}>
+        <DAppProvider config={config}>
             <App/>
         </DAppProvider>
     </React.StrictMode>,

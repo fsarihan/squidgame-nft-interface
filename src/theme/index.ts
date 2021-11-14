@@ -6,6 +6,7 @@ export default extendTheme({
             body: {
                 bg: "#1A202C",
                 color: "white",
+                textShadow: "1px 1px 5px #000"
             },
         },
     },

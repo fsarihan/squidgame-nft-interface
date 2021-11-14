@@ -7,7 +7,7 @@ import {
     Center
 } from '@chakra-ui/react';
 import Countdown from 'react-countdown';
-import bg from '../assets/images/bg103.jpg'
+import bg from '../assets/images/game1.jpg'
 
 import * as React from "react";
 
@@ -24,6 +24,7 @@ export default function Game() {
                 backgroundAttachment={'fixed'}
                 backgroundPosition={'center'}
                 backgroundSize={'cover'}
+
                 h="100vh"
             >
 
@@ -42,13 +43,18 @@ export default function Game() {
                             <Text as={'span'} color={'squid.100'}>
                                 GAME #1
                             </Text>
+
+                            <Text color={'blue.400'} fontSize={{base: '4xl', sm: '4xl', md: '6xl'}} mt={50}
+                                  justifyContent={'center'} alignContent={'center'} textAlign={'center'}
+                                  justifyItems={'center'}>
+                                COMING SOON
+                            </Text>
+
                         </Heading>
 
-                        <Text color={'gray.200'} fontSize={{base: '4xl', sm: '4xl', md: '6xl'}}>
-                            <Center>COMING SOON</Center>
-                        </Text>
 
                     </Stack>
+
                 </Container>
             </Box>
         </section>
