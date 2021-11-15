@@ -19,7 +19,7 @@ import {
     // @ts-ignore
 } from "react-router-dom";
 
-import bg from "../assets/images/a11.jpg";
+import bg from "../assets/images/bg104.jpg";
 // @ts-ignore
 import GlitchText from 'react-glitch-effect/core/GlitchText';
 import {useState} from "react";
@@ -128,18 +128,18 @@ const Info = () => {
                         <br/> <br/>
                         <Center>
                             <RDLink to={'/roadmap'}>
-                                <Button variant={'link'} color={'squid.100'} colorScheme={'pink'} size={'xl'}
+                                <Button variant={'link'} color={'squid.100'} colorScheme={'pink'} size={'lg'}
                                         textShadow={"1.5px 1.5px #000"}
-                                        fontSize={'xl'}>
+                                        fontSize={'lg'}>
                                     Check Our Road Map
                                 </Button>
                             </RDLink>
                         </Center>
                         <Center>
                             <RDLink to={'/faq'}>
-                                <Button variant={'link'} color={'squid.100'} colorScheme={'pink'} size={'xl'}
+                                <Button variant={'link'} color={'squid.100'} colorScheme={'pink'} size={'lg'}
                                         textShadow={"1.5px 1.5px #000"}
-                                        fontSize={'xl'}>
+                                        fontSize={'lg'}>
                                     Check Frequently Asked Questions
                                 </Button>
                             </RDLink>

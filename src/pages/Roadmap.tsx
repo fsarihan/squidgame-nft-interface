@@ -20,7 +20,7 @@ import {
     Button
 } from "@chakra-ui/react";
 import {TimelineItem} from "../components/StoryTimeLine";
-import bg from "../assets/images/a11.jpg";
+import bg from "../assets/images/bg104.jpg";
 // @ts-ignore
 import GlitchText from 'react-glitch-effect/core/GlitchText';
 

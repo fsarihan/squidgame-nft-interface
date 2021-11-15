@@ -23,7 +23,7 @@ import {
     // @ts-ignore
 } from "react-router-dom";
 
-import bg from "../assets/images/a11.jpg";
+import bg from "../assets/images/bg104.jpg";
 // @ts-ignore
 import GlitchText from 'react-glitch-effect/core/GlitchText';
 

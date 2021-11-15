@@ -6,6 +6,7 @@ import {
     Text,
     Center,
     Button,
+    VStack,
     FormControl,
     FormLabel,
     NumberInput,
@@ -18,7 +19,7 @@ import {
 import {useEthers} from "@usedapp/core";
 import Countdown from 'react-countdown';
 import {useCookies} from 'react-cookie';
-import bg from '../assets/images/21.jpg'
+import bg from '../assets/images/b13.jpg'
 import squidFactoryABI from '../assets/data/abi.json'
 import {useState} from "react";
 import {toast} from "react-toastify";
@@ -64,7 +65,7 @@ const mintNFT = async (amount: number, referrer = null) => {
         let mintcontract = new ethers.Contract(smartContractAddress, squidFactoryABI, mintSigner);
         if (referrer != null) {
             // @ts-ignore
-            mintcontract.mintNFTWithReferrer(amount, atob(referrer), {
+            mintcontract.mintNFTWithReferrer(amount, "0x" + atob(referrer), {
                 value: value,
             }).then(() => {
                 successHandler();
@@ -112,9 +113,10 @@ export default function Mint() {
     }
     const Completed = () => {
         return (
-            <>
-                <Center><FormLabel fontSize={{base: '3xl', sm: '3xl', lg: '4xl'}}><b>AMOUNT</b></FormLabel></Center>
+            <Container bgColor={'gray.800'} opacity={'75%'} p={10}>
+                <Center><FormLabel fontSize={{base: '3xl', sm: '3xl', lg: '4xl'}} textColor={'orange.300'}><b>AMOUNT</b></FormLabel></Center>
                 <NumberInput
+                    my={5}
                     w="full"
                     max={2180}
                     min={1}
@@ -145,14 +147,12 @@ export default function Mint() {
                 <Center>
                     <Text
                         my={4}
-                        bgColor={'gray.800'}
-                        opacity={'90%'}
                         fontSize={{base: '4xl', sm: '3xl', lg: '4xl'}}
                         colorScheme="red">
                         TOTAL {(nftPrice * mintCount).toFixed(2)} MATIC
                     </Text>
                 </Center>
-            </>
+            </Container>
         )
     }
     // @ts-ignore

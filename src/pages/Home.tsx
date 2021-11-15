@@ -12,7 +12,7 @@ import {
     Link as RDLink,
     // @ts-ignore
 } from "react-router-dom";
-import bg from '../assets/images/a11.jpg'
+import bg from '../assets/images/bg104.jpg'
 
 import * as React from "react";
 import "@fontsource/caveat";
