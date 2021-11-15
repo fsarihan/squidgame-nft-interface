@@ -19,7 +19,7 @@ import {
 import {useEthers} from "@usedapp/core";
 import Countdown from 'react-countdown';
 import {useCookies} from 'react-cookie';
-import bg from '../assets/images/b13.jpg'
+import bg from '../assets/images/b12.jpg'
 import squidFactoryABI from '../assets/data/abi.json'
 import {useState} from "react";
 import {toast} from "react-toastify";
@@ -166,7 +166,7 @@ export default function Mint() {
 
             return (
                 <Text color={'gray.200'} fontSize={{base: '4xl', sm: '4xl', md: '6xl'}} bgColor={'gray.800'}
-                      opacity={'70%'}>
+                      opacity={'75%'}>
                     <Center textColor={'orange.300'}>
                         WILL START ON <br/>
                         21 NOVEMBER 2021
