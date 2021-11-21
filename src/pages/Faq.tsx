@@ -459,6 +459,20 @@ const Info = () => {
                                     Gen 2 NFT prices will be higher and will be announced before the project goes on sale.
                                 </AccordionPanel>
                             </AccordionItem>
+                            <AccordionItem>
+                                <h2>
+                                    <AccordionButton _expanded={{bg: "squid.100", color: "white"}}>
+                                        <Box flex="1" textAlign="left" fontSize={'2xl'}>
+                                            How long will the game be open to participation?
+                                        </Box>
+                                        <AccordionIcon/>
+                                    </AccordionButton>
+                                </h2>
+                                <AccordionPanel opacity={'75%'} pb={4} fontSize={'lg'} color={'white'}
+                                                bgColor={"gray.800"}>
+                                    Game 1 project will be open to participation for 11 days. If there are unsold NFTs when the game is played, they will be burned.
+                                </AccordionPanel>
+                            </AccordionItem>
                         </Accordion>
                         <Text color={'white'}
                               bgColor={"gray.800"} fontSize={'xl'}>

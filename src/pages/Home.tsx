@@ -80,7 +80,7 @@ export default function Home() {
                             <RDLink to={'/mint'}>
                                 <Button
                                     colorScheme={'red'}
-                                    size={'lg'}
+                                    size={'md'}
                                     bg={'squid.100'}
                                     rounded={'full'}
                                     px={6}
@@ -109,13 +109,13 @@ export default function Home() {
                                     top={'10px'}
                                 />
                                 <Text
-                                    fontSize={'lg'}
+                                    fontSize={'xl'}
                                     fontFamily={'Caveat'}
                                     position={'absolute'}
-                                    right={'-125px'}
+                                    right={'-95px'}
                                     top={'-15px'}
                                     transform={'rotate(10deg)'}>
-                                    <b>177</b> Matic per NFT
+                                    <b>177</b> Matic
                                 </Text>
                             </Box>
                             <SideAnimation/>

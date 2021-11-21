@@ -62,7 +62,7 @@ export default function SmallWithSocial() {
                     <SocialButton label={'Twitter'} href={'https://twitter.com/squidgame1nft/'} target={'_blank'}>
                         <FaTwitter/>
                     </SocialButton>
-                    <SocialButton label={'Discord'} href={'https://discord.gg/JsvkrwRc6h'} target={'_blank'}>
+                    <SocialButton label={'Discord'} href={'https://discord.gg/B2BsaTF3Kr'} target={'_blank'}>
                         <FaDiscord/>
                     </SocialButton>
                     <SocialButton label={'Instagram'} href={'https://instagram.com/squidgame1nft/'} target={'_blank'}>

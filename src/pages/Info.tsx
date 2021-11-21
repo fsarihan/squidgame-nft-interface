@@ -50,6 +50,17 @@ import w22 from "../assets/images/examples/22.webp";
 import w23 from "../assets/images/examples/23.webp";
 import w24 from "../assets/images/examples/24.webp";
 import w25 from "../assets/images/examples/25.webp";
+import w26 from "../assets/images/examples/26.webp";
+import w27 from "../assets/images/examples/27.webp";
+import w28 from "../assets/images/examples/28.webp";
+import w29 from "../assets/images/examples/29.webp";
+import w30 from "../assets/images/examples/30.webp";
+import w31 from "../assets/images/examples/31.webp";
+import w32 from "../assets/images/examples/32.webp";
+import w33 from "../assets/images/examples/33.webp";
+import w34 from "../assets/images/examples/34.webp";
+import w35 from "../assets/images/examples/35.webp";
+
 
 import {useState} from "react";
 
@@ -71,7 +82,7 @@ function shuffle(array: any) {
     return array;
 }
 
-let data: any = [w1, w2, w3, w4, w5, w6, w7, w8, w9, w10, w11, w12, w13, w14, w15, w16, w17, w18, w19, w20, w21, w22, w23, w24, w25];
+let data: any = [w1, w2, w3, w4, w5, w6, w7, w8, w9, w10, w11, w12, w13, w14, w15, w16, w17, w18, w19, w20, w21, w22, w23, w24, w25, w26, w27, w28, w29, w30, w31, w32, w33, w34, w35];
 shuffle(data);
 const dataMock = [
     {
@@ -139,7 +150,14 @@ const Info = () => {
                             Within the scope of the project, a total of 2180 NFTs were designed. It will be available to collectors on 21/11/2021. The NFTs in this project will be referred to as Gen 1.
                             <br/>
                             <br/>
-                            Within this project, a game of red light and green light will be played. Anyone who buys Gen1 NFTs will be able to participate in the game. Game details will be shared on the website and social media platforms.
+                            Within this project, a game of red light and green light will be played. Anyone who buys Gen1 NFTs will be able to participate in the game. Game details will be shared on the website and social media platforms    &nbsp;
+                            <RDLink
+                                to={'/game'}>
+                                <Button variant={'link'} color={'squid.100'}>
+                                    Check The Game#1
+                                </Button>
+                            </RDLink>
+                            .
                             <br/>
                             Participation is optional and those who want to participate must upload the NFTs they have purchased to the game.
                             <br/>
