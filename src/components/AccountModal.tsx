@@ -10,7 +10,7 @@ import {
     ModalFooter,
     ModalBody,
     ModalCloseButton,
-    Text, Input, Center,
+    Text, Input, Center, useToast,
 } from "@chakra-ui/react";
 import {ExternalLinkIcon, CopyIcon} from "@chakra-ui/icons";
 import {useEthers} from "@usedapp/core";
@@ -28,6 +28,7 @@ type Props = {
 export default function AccountModal({isOpen, onClose}: Props) {
     const {account, deactivate} = useEthers();
     const [copied, setCopied] = useState(false);
+    const toast = useToast()
 
     function handleDeactivateAccount() {
         deactivate();
@@ -153,6 +154,14 @@ export default function AccountModal({isOpen, onClose}: Props) {
                             <CopyToClipboard
                                 text={affiliateURL}
                                 onCopy={() => {
+                                    toast({
+                                        title: "Success!",
+                                        description: "✅ Link copied to clipboard!",
+                                        status: "success",
+                                        duration: 9000,
+                                        isClosable: true,
+                                        position: "top",
+                                    })
                                     setCopied(true);
                                 }}>
 

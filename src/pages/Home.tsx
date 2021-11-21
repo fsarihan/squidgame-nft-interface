@@ -69,7 +69,7 @@ export default function Home() {
                         </Heading>
 
                         <Text color={'gray.100'} fontSize={'xl'}>
-                            Are you ready for a different and radical NFT experience on the POLYGON MATIC network! You can get more details from our website or social networks.
+                            Are you ready for a different NFT experience on the POLYGON MATIC network! You can get more details from our website or social networks.
                         </Text>
                         <Stack
                             direction={'column'}
